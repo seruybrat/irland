@@ -1,0 +1,171 @@
+$xlg: 1290px
+$lg: 980px
+$md: 780px
+$sm: 550px
+$xs: 420px
+
+@media (max-width: $xlg)
+
+    .container
+        width: 100%
+        padding-right: 15px
+        padding-left: 15px
+    .block-overlay
+        .overlay
+            right: 15%
+    .nav__link
+        margin: 0 15px
+    .benefits__txt
+        width: 80%
+    .how__item
+        width: 80%
+    .benefits
+        padding: 63px 0 28px
+
+@media (max-width: $lg)
+
+    .top
+        top: 73px
+    .header
+        padding: 15px 0 5px
+    .hamburger
+        display: block
+        margin: 10px 10px 0 0
+    .header__btns 
+        position: absolute
+        left: 15px
+        right: 15px
+        bottom: 0
+        .btn
+            margin: 5px
+    .block-overlay
+        .overlay
+            right: 0
+            background-size: 115% auto
+    .nav, .header__btns, .footer__btns
+        display: none
+    .footer
+        text-align: center
+    .footer__logo
+        float: none
+    .footer__bottom
+        padding-top: 60px
+    #youtube
+        height: 533px !important
+
+
+@media (max-width: $md)
+
+    .col-4
+        width: 50%
+    .block-overlay
+        .overlay
+            background-size: 130% auto
+    .tabs__item
+        margin: 10px 8px 0
+    .top .overlay
+        background-size: cover
+    .top__txt
+        width: 100%
+    .top__content
+        text-align: center
+        top: 30%
+        bottom: auto
+    .tabs__list
+        width: 250px
+        text-align: center
+        margin: 0 auto
+    #youtube
+        height: 390px !important
+    .modal__inner
+        top: 50px
+        width: 80%
+    .socials
+        top: 20px
+
+@media (min-width: $sm)
+
+    #output1
+        background-image: url('../img/bg12x.jpg')
+        background-position: top right
+    #output2
+        background-image: url('../img/bg22x.jpg')
+    #output3
+        background-image: url('../img/bg32x.jpg')
+        background-position: center bottom
+    #output4
+        background-image: url('../img/bg42x.jpg')
+    #output5
+        background-image: url('../img/bg52x.jpg')
+    #output6
+        background-image: url('../img/bg62x.jpg')
+
+@media (max-width: $sm)
+
+    .col-4
+        width: 100%
+    .header__btns .btn
+        margin: 15px 0
+        display: block
+    .tabs
+        bottom: 10px
+    .top__content
+        top: 15%
+    .title
+        font-size: 2em
+        line-height: 1em
+    .benefits__txt
+        margin-bottom: 40px
+    #youtube
+        height: 300px !important
+    .how
+        padding: 40px 0 40px
+    .benefits
+        padding: 50px 0 0px
+    .footer
+        padding: 50px 0 50px
+    .footer__bottom
+        padding-top: 40px
+    .modal__inner
+        top: 30px
+        width: 95%
+    #output1
+        background-image: url('../img/bg1.jpg')
+        background-position: right center
+    #output2
+        background-image: url('../img/bg2.jpg')
+    #output3
+        background-image: url('../img/bg3.jpg')
+        background-position: top right 30%
+    #output4
+        background-image: url('../img/bg4.jpg')
+    #output5
+        background-image: url('../img/bg5.jpg')
+    #output6
+        background-image: url('../img/bg6.jpg')
+
+@media (max-width: $xs)
+
+    .feedback__left
+        position: static
+    .feedback__right
+        padding: 0
+    .feedback__author, .feedback__spec
+        text-align: center
+    .footer__right, .footer__left
+        float: none
+
+
+@media (max-width: $md) and (orientation: landscape)
+
+    .top-wrapper
+        height: 600px !important
+    .top__content
+        top: 60px
+    #menu-desktop.open .header__right
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        padding-bottom: 60px

@@ -1,0 +1,36 @@
+@mixin font-face($font-family, $file-path, $font-weight, $font-style)
+    @font-face
+        font-family: $font-family
+        src: url('#{$file-path}.woff')
+        src: url('#{$file-path}.ttf') format('truetype')
+        font-weight: $font-weight
+        font-style: $font-style
+
+@include font-face('Irizi', '../fonts/icons/irizi', 300, normal)
+@include font-face('Avenir', '../fonts/Avenir/Avenir-Heavy', 300, normal)
+@include font-face('Avenir', '../fonts/Avenir/Avenir-Light', 100, normal)
+@include font-face('Avenir-Book', '../fonts/Avenir/Avenir-Book', 300, normal)
+
+[class^="icon-"], [class*=" icon-"]
+    font-family: 'Irizi' !important
+    speak: none
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.icon-4:before
+    content: '\e800'
+.icon-5:before
+    content: '\e801'
+.icon-6:before
+    content: '\e802'
+.icon-1:before
+    content: '\e803'
+.icon-2:before
+    content: '\e804'
+.icon-3:before
+    content: '\e805'
